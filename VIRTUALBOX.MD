@@ -18,19 +18,17 @@ Faça o download da versão mais recente do VirtualBox diretamente no site ofici
 ## 2. Instalação do VirtualBox
 Execute o instalador compatível com o seu sistema operativo (Windows, macOS ou Linux).
 Siga as etapas fornecidas pelo assistente de instalação:
+
 Passo 1: Aceite os termos de uso.
 Passo 2: Selecione os componentes (recomenda-se manter as opções padrão).
 Passo 3: Confirme e conclua a instalação.
 
-## 3. Configuração Básica
-Abra o VirtualBox.
-Clique em Novo para criar uma nova máquina virtual.
-Configure os parâmetros principais (nome, tipo e versão do sistema operativo, alocação de recursos).
-Salve e inicie a máquina virtual criada.
+## 3. 
+Se chegou até aqui significa que já tem o software nescessario para montar nosso ambiente lab, você está pronto para começar a preparar o sistema operacional!
 
 ## Screenshots
 
-![App Screenshot](https://glpi-project.org/wp-content/uploads/2021/11/hero-image.png)
+![App Screenshot](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaszM2AejpV-gAHOojTL4WrxGxlhgnmGkcnnyPZ2cnkcUdrgAlogQtr0wjXlTP92gyfHU&usqp=CAU)
 
 
 ## Suporte
