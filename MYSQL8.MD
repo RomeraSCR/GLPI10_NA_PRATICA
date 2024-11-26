@@ -1,12 +1,7 @@
-Imagem carregada
-Nem você sabe fechar um markdown kkk 
-
-O ChatGPT disse:
-Ah, percebi o problema! O erro ocorreu porque os blocos de código não foram devidamente encerrados com três backticks (```). Isso é essencial para que o Markdown interprete corretamente os blocos de código. Aqui está a correção:
 
 # Instalação e Configuração do MySQL 8.1.0
 
-Este guia cobre o processo de instalação e configuração do MySQL 8.1.0 em servidores Linux (Oracle/Ubuntu-Server). Ideal para projetos que exigem uma base de dados robusta e escalável.
+Este guia cobre o processo de instalação e configuração do MySQL 8.1.0 em servidores Linux (Oracle-Linux). Ideal para projetos que exigem uma base de dados robusta e escalável.
 
 ---
 
