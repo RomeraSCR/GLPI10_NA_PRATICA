@@ -1,4 +1,4 @@
-![Logo](https://i.ibb.co/gv9MG3J/10.png)
+<a align="center"> ![Logo](https://i.ibb.co/gv9MG3J/10.png)</a>
 
 <h1 align="center"> Instalação e Configuração do GLPI 10 </h1>
 
