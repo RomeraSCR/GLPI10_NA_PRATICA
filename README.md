@@ -1,4 +1,5 @@
 # Instalação e Configuração do GLPI 10
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
 ## Pré-requisitos
 1. Servidor Linux.
@@ -12,6 +13,7 @@
    sudo apt update
    sudo apt install apache2 php libapache2-mod-php php-mysql mariadb-server unzip -y
 Configure o banco de dados:
+
 CREATE DATABASE glpi;
 CREATE USER 'glpi_user'@'localhost' IDENTIFIED BY 'senha_segura';
 GRANT ALL PRIVILEGES ON glpi.* TO 'glpi_user'@'localhost';
