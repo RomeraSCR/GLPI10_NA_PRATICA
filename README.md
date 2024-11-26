@@ -1,5 +1,9 @@
+![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+
 <h1 align="center"> Instalação e Configuração do GLPI 10 </h1>
+
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
 ## Pré-requisitos
 1. Servidor Linux.
 2. Apache, PHP 8.2 ou superior e MySQL/MariaDB.
