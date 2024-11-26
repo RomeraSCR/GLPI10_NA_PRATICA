@@ -17,7 +17,7 @@ Este guia cobre o processo de instalação e configuração do MySQL 8.1.0 em se
 Certifique-se de que o servidor está atualizado antes de instalar o MySQL.
 
 ```bash
-sudo apt update && sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y```
 2. Adicionar o Repositório do MySQL
 Baixe e configure o repositório oficial do MySQL para garantir a instalação da versão mais recente (8.1.0).
 
