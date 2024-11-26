@@ -16,10 +16,8 @@ Este guia cobre o processo de instalação e configuração do MySQL 8.1.0 em se
 ### **1. Atualizar o Sistema**
 Certifique-se de que o servidor está atualizado antes de instalar o MySQL.
 
-apt
+#### Para distribuições baseadas no Debian/Ubuntu:
 ```bash
 sudo apt update && sudo apt upgrade -y
-
-yum
-```bash
+Para distribuições baseadas no Red Hat (RHEL)/CentOS:
 sudo yum update -y
