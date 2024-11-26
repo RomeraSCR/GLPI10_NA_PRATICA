@@ -12,6 +12,6 @@ Este projeto tem como objetivo documentar, de forma detalhada, todo o processo d
 ## Passo a Passo
 
  - [Criando vm no VirtualBox](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Instalando e Configurando Mysql](https://github.com/matiassingers/awesome-readme)
+ - [Instalando e Configurando Mysql](https://github.com/RomeraSCR/GLPI10_na_pratica/blob/main/MYSQL8.MD)
  - [Instalando e Configurando Apache](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
  - [Instalando e Configurando GLPI10](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
