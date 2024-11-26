@@ -25,7 +25,7 @@ Passo 2: Selecione os componentes (recomenda-se manter as opções padrão).
 
 Passo 3: Confirme e conclua a instalação.
 
-## 3. 
+## 3. Fim
 Se chegou até aqui significa que já tem o software nescessario para montar nosso ambiente lab, você está pronto para começar a preparar o sistema operacional!
 
 ## Screenshots
