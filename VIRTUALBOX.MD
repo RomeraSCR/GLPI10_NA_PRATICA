@@ -20,7 +20,9 @@ Execute o instalador compatível com o seu sistema operativo (Windows, macOS ou 
 Siga as etapas fornecidas pelo assistente de instalação:
 
 Passo 1: Aceite os termos de uso.
+
 Passo 2: Selecione os componentes (recomenda-se manter as opções padrão).
+
 Passo 3: Confirme e conclua a instalação.
 
 ## 3. 
@@ -28,7 +30,7 @@ Se chegou até aqui significa que já tem o software nescessario para montar nos
 
 ## Screenshots
 
-![App Screenshot](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaszM2AejpV-gAHOojTL4WrxGxlhgnmGkcnnyPZ2cnkcUdrgAlogQtr0wjXlTP92gyfHU&usqp=CAU)
+![App Screenshot](https://kfocus.org/img/wf/vbox-w11/vbox-newvm-000.webp?1725558517)
 
 
 ## Suporte
