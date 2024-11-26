@@ -5,15 +5,28 @@
 
 # Instalação e Configuração do Virtual Box
 
-Este projeto tem como objetivo documentar, de forma detalhada, todo o processo de instalação e configuração do GLPI 10.0.17 em um ambiente controlado. Utilizamos uma máquina virtual com Oracle Linux, configurada com os seguintes componentes essenciais: Apache, MySQL 8 e PHP 8.2, todos atualizados para as versões mais recentes, garantindo estabilidade, segurança e desempenho.
-
+Este guia documenta o processo de instalação do VirtualBox, uma ferramenta essencial para criar e gerenciar máquinas virtuais em diferentes sistemas operativos.
 
 ## Passo a Passo
 
- - [1. Faça o dowload do site oficial.](https://www.virtualbox.org/wiki/Downloads)
- - [Instalando e Configurando Mysql](https://github.com/RomeraSCR/GLPI10_na_pratica/blob/main/MYSQL8.MD)
- - [Instalando e Configurando Apache](https://github.com/RomeraSCR/GLPI10_na_pratica/blob/main/APACHE.MD)
- - [Instalando e Configurando GLPI10](https://github.com/RomeraSCR/GLPI10_na_pratica/blob/main/GLPI10.MD)
+
+## 1. Download do VirtualBox
+Faça o download da versão mais recente do VirtualBox diretamente no site oficial:
+ - [👉 Baixar VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+
+
+## 2. Instalação do VirtualBox
+Execute o instalador compatível com o seu sistema operativo (Windows, macOS ou Linux).
+Siga as etapas fornecidas pelo assistente de instalação:
+Passo 1: Aceite os termos de uso.
+Passo 2: Selecione os componentes (recomenda-se manter as opções padrão).
+Passo 3: Confirme e conclua a instalação.
+
+## 3. Configuração Básica
+Abra o VirtualBox.
+Clique em Novo para criar uma nova máquina virtual.
+Configure os parâmetros principais (nome, tipo e versão do sistema operativo, alocação de recursos).
+Salve e inicie a máquina virtual criada.
 
 ## Screenshots
 
