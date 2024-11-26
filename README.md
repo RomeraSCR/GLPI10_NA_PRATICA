@@ -1,7 +1,7 @@
 # Instalação e Configuração do GLPI 10
 
 ## Pré-requisitos
-1. Servidor Linux ou Windows.
+1. Servidor Linux.
 2. Apache, PHP 8.2 ou superior e MySQL/MariaDB.
 3. Acesso ao terminal ou interface de administração.
 4. Instalador do GLPI disponível em [GLPI Project](https://glpi-project.org/).
