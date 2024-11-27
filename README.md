@@ -13,8 +13,8 @@ Este projeto tem como objetivo documentar, de forma detalhada, todo o processo d
 
  - [Instalando VirtualBox](https://github.com/RomeraSCR/GLPI10_NA_PRATICA/blob/main/PASSO1-VIRTUALBOX.md) caso use outro software de virtualização pule esse passo.
  - [Instalando e Configurando Oracle-Linux](https://github.com/RomeraSCR/GLPI10_NA_PRATICA/blob/main/PASSO2-ORACLE-LINUX.md)
- - [Instalando e Configurando Mysql](https://github.com/RomeraSCR/GLPI10_na_pratica/blob/main/MYSQL8.MD)
  - [Instalando e Configurando Apache](https://github.com/RomeraSCR/GLPI10_na_pratica/blob/main/APACHE.MD)
+ - [Instalando e Configurando Mysql](https://github.com/RomeraSCR/GLPI10_NA_PRATICA/blob/main/PASSO4-MYSQL-SERVER.md)
  - [Instalando e Configurando GLPI10](https://github.com/RomeraSCR/GLPI10_na_pratica/blob/main/GLPI10.MD)
 
 ## Screenshots
