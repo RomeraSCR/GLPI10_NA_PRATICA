@@ -15,7 +15,7 @@ Este projeto tem como objetivo documentar, de forma detalhada, todo o processo d
  - [Instalando e Configurando Oracle-Linux](https://github.com/RomeraSCR/GLPI10_NA_PRATICA/blob/main/PASSO2-ORACLE-LINUX.md)
  - [Instalando e Configurando Apache/PHP](https://github.com/RomeraSCR/GLPI10_NA_PRATICA/blob/main/PASSO3-APACHE-PHP.md)
  - [Instalando e Configurando Mysql](https://github.com/RomeraSCR/GLPI10_NA_PRATICA/blob/main/PASSO4-MYSQL-SERVER.md)
- - [Instalando e Configurando GLPI10](https://github.com/RomeraSCR/GLPI10_na_pratica/blob/main/GLPI10.MD)
+ - [Instalando e Configurando GLPI10](https://github.com/RomeraSCR/GLPI10_NA_PRATICA/blob/main/PASSO5-GLPI10.md)
 
 ## Screenshots
 
