@@ -28,6 +28,8 @@ Passo 3: Confirme e conclua a instalação.
 ## 3. Resumo
 Se chegou até aqui significa que já tem o software nescessario para montar nosso ambiente como o VirtualBox, Vmware, Hyper-v, entre outros, acredito que você está pronto para começar a preparar o sistema operacional!
 
+ - [👉Proximo passo](https://github.com/RomeraSCR/GLPI10_NA_PRATICA/blob/main/PASSO2-ORACLE-LINUX.md)
+
 ## Screenshots
 
 ![App Screenshot](https://kfocus.org/img/wf/vbox-w11/vbox-newvm-000.webp?1725558517)
