@@ -81,5 +81,40 @@ Ative as dependencias:
     sudo getsebool httpd_can_network_connect_db
     sudo getsebool httpd_can_sendmail
 ```
-e já podemos acessar `http://ip-maquina/glpi`
 
+### 5. **Criar arquivo do Apache**
+
+Crie o arquivo glpi.conf:
+
+```bash
+    sudo nano /etc/httpd/conf.d/glpi.conf
+```
+
+Exemplo de configuração disponibilizada pela GLPI-Project:
+
+```bash
+    <VirtualHost *:80>
+        ServerName servername.localhost
+
+        DocumentRoot /var/www/html/glpi/public
+
+        # If you want to place GLPI in a subfolder of your site (e.g. your virtual host is serving multiple applications),
+        # you can use an Alias directive. If you do this, the DocumentRoot directive MUST NOT target the GLPI directory itself.
+        # Alias "/glpi" "/var/www/glpi/public"
+
+        <Directory /var/www/html/glpi/public>
+            Require all granted
+
+            RewriteEngine On
+
+            # Ensure authorization headers are passed to PHP.
+            # Some Apache configurations may filter them and break usage of API, CalDAV, ...
+            RewriteCond %{HTTP:Authorization} ^(.+)$
+            RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+            # Redirect all requests to GLPI router, unless file exists.
+            RewriteCond %{REQUEST_FILENAME} !-f
+            RewriteRule ^(.*)$ index.php [QSA,L]
+        </Directory>
+    </VirtualHost>
+```
