@@ -29,22 +29,40 @@ Neste guia, utilizaremos o **Termius** como IDE para acesso ssh ao servidor Orac
 
 ## **Instalação do PHP8.2**  
 
-### 1. **Atualizar o Sistema**
+### 1. **Verificar os Repositórios Disponíveis:**
 
-Primeiro, atualize os repositórios do sistema e os pacotes instalados:
-
-```bash
-  sudo dnf update -y
-```
-
-### 2. **Instalar o PHP 8.2 e seus módulos necessários**
+Primeiro, vamos verificar se os repositórios do Oracle Linux estão configurados corretamente para o PHP 8.2:
 
 ```bash
-   sudo dnf install -y php php-cli php-fpm php-mysqlnd php-xml php-mbstring php-json php-common php-gd php-imap php-curl php-zip php-soap php-intl php-opcache
+  sudo dnf repolist
 ```
 
+### 2. **Habilitar o Repositório Remi:**
 
+Se o repositório Remi não estiver habilitado, instale e habilite o repositório Remi para obter versões mais recentes do PHP:
 
+```bash
+    sudo dnf install -y dnf-utils
+    sudo dnf install -y https://rpms.remirepo.net/enterprise/remi-release-9.rpm
+```
+
+### 3. **Agora, habilite o repositório Remi:**
+
+```bash
+    sudo dnf module enable php:remi-8.2 -y
+```
+
+### 4. **Instalar o PHP 8.2:**
+
+```bash
+    sudo dnf install -y php php-cli php-fpm php-mysqlnd php-xml php-mbstring php-json php-common php-gd php-imap php-curl php-zip php-soap php-intl php-opcache php-ldap php-imagick php-bcmath
+```
+
+### 5. **Verificar a Versão Instalável do PHP:**
+
+```bash
+    php -v
+```
 
 
 ### **Dica Importante no virtualbox**  
