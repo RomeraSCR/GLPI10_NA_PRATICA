@@ -77,6 +77,7 @@ Faça as seguintes configurações
     upload_max_filesize = 100M
     post_max_size = 100M
     memory_limit = 512M
+    session.cookie_httponly = On
 ```
 
 Após feito as alterações reinicie o PHP
