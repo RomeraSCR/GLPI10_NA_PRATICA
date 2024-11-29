@@ -64,34 +64,36 @@ Clique em **Próximo ▶** e, em seguida, em **Finalizar ✔** Após feito isso 
 - para ter acesso ao usuario root utilize `su -` com a senha definida na instalação senha padrão `changeme`.  
 - É recomendável que crie um novo usuario para acesso externo e utilize aplicativos ssh como (Putty/Termius).
 
-### **Comandos para Criar usuario**
+### **Comandos para Criar usuario e alterar senha**
 
-     Crie um novo usuário: Substitua acessossh pelo nome que deseja dar ao usuário:
-     ```bash
-        adduser acessossh
-     ```
+Crie um novo usuário: Substitua acessossh pelo nome que deseja dar ao usuário:
 
-     Defina a senha para o novo usuário: Substitua acessossh pelo nome do usuário criado (Senha tem que satisfazer os padrões de segurança):
-     ```bash
-        passwd acessossh
-     ```
+```bash
+  adduser acessossh
+```
+
+
+Defina a senha para o novo usuário: Substitua acessossh pelo nome do usuário criado (Senha tem que satisfazer os padrões de segurança):
+```bash
+   passwd acessossh
+```
      
-     Adicione o usuário ao grupo sudo: Isso permitirá que o usuário execute comandos administrativos:
-     ```bash
-        usermod -aG wheel acessossh
-     ```
+Adicione o usuário ao grupo sudo: Isso permitirá que o usuário execute comandos administrativos:
+```bash
+   usermod -aG wheel acessossh
+```
 
-    Verifique se o usuário foi adicionado corretamente ao grupo sudo:
-     ```bash
-        groups acessossh
-     ```
+Verifique se o usuário foi adicionado corretamente ao grupo sudo:
+```bash
+   groups acessossh
+```
 
-    Por final altere a senha do usuario root(Senha tem que satisfazer os padrões de segurança):
-     ```bash
-        passwd root
-     ```
+Por final altere a senha do usuario root(Senha tem que satisfazer os padrões de segurança):
+```bash
+   passwd root
+```
 
-### **Configurar a Rede e acesso SSH**
+## **Configurar a Rede e acesso SSH**
 
 Para garantir que a máquina virtual possa se comunicar com o host ou acessar a rede externa, é necessário configurar corretamente o adaptador de rede no VirtualBox. Aqui estão as opções mais comuns:
 
@@ -106,7 +108,40 @@ No modo Bridge, a máquina virtual será tratada como um dispositivo físico na 
 
 ---
 
-###  **Com ip acessivel e usuario de acesso sua maquina está pronta para acessar ssh**
+###  **Configurações Adicionais**
+
+Faça acesso a maquina utilizando ssh com o usuario criado e ip da maquina para prosseguir com a ativação do firewall do Oracle linux
+
+Iniciar e ativar o firewall do Oracle Linux:
+```bash
+sudo systemctl start firewalld
+sudo systemctl enable firewalld
+```
+
+Liberar Porta 80 para HTTP (Apache):
+```bash
+   sudo firewall-cmd --zone=public --add-port=80/tcp --permanent
+```
+     
+Liberar Porta 443 para HTTPS (Apache):
+```bash
+   sudo firewall-cmd --zone=public --add-port=443/tcp --permanent
+```
+
+Liberar Porta 3306 para MySQL/MariaDB:
+```bash
+   sudo firewall-cmd --zone=public --add-port=3306/tcp --permanent
+```
+
+Aplicar as Alterações no Firewalld:
+```bash
+   sudo firewall-cmd --reload
+```
+
+Verificar as Regras do Firewalld:
+```bash
+   sudo firewall-cmd --list-all
+```
 
 ### **Dica Final**  
 - Escolha o modo de rede mais adequado ao seu cenário (NAT ou Bridge).  
