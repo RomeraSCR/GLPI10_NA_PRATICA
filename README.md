@@ -1,4 +1,4 @@
-![Logo](https://i.ibb.co/Dr4wTK7/1.png)
+![Logo](https://i.ibb.co/wpjxtkf/glpi.png)
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 

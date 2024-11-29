@@ -1,4 +1,4 @@
-# ![Logo](https://i.ibb.co/hM1bC3X/2.png)  
+# ![Logo](https://i.ibb.co/cyKyKmH/oracle.png)  
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
 # Guia de Instalação e Configuração do Oracle Linux 9.5  

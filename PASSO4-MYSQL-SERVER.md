@@ -1,4 +1,4 @@
-# ![Logo](https://i.ibb.co/hM1bC3X/2.png)  
+# ![Logo](https://i.ibb.co/GvFxS48/mysql.png)  
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
 # Guia de Instalação e Configuração do MYSQL8 SERVER 
@@ -53,7 +53,7 @@ Antes de iniciar a instalação, é sempre recomendável atualizar o sistema par
 
 ### 1. **Acessar o MySQL como usuário root**
 
-Utilize a senha Temporária fornecida na instalação para o primeiro acesso.
+Utilize a senha Temporária fornecida na instalação para o primeiro acesso se não tiver senha fornecida na log tenta sem senha.
 
 ```bash
   sudo mysql -u root -p
