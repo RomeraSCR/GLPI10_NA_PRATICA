@@ -1,23 +1,107 @@
-![Logo](https://i.ibb.co/k5tr4bF/3.png)
-
+# ![Logo](https://i.ibb.co/hM1bC3X/2.png)  
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
+# Guia de Instalação e Configuração do MYSQL8 SERVER 
 
-# Instalação e Configuração do Mysql 8.1 
+Este guia detalha o processo de instalação e configuração do **MYSQL8 SERVER**, um dos softwares necessários para a instalação do **GLPI 10**, garantindo um ambiente estável e seguro.  
 
-Este projeto tem como objetivo documentar, de forma detalhada, todo o processo de instalação e configuração do GLPI 10.0.17 em um ambiente controlado. Utilizamos uma máquina virtual com Oracle Linux, configurada com os seguintes componentes essenciais: Apache, MySQL 8 e PHP 8.2, todos atualizados para as versões mais recentes, garantindo estabilidade, segurança e desempenho.
+---
+
+## 1. Acessar maquina criada no passo anterior 
+
+Neste guia, utilizaremos o **Termius** como IDE para acesso ssh ao servidor Oracle Linux 9.5, Caso prefira outro software de acesso ssh, os passos são similares e podem ser adaptados conforme necessário.  
+
+1. **Inicie o Termius**:  
+   - Clique na **"Maquina-Virtual"** criada para iniciar a  conexão
+
+## **Instalação do MYSQL8 SERVER**  
+
+### 1. **Atualizar o Sistema**
+
+Antes de iniciar a instalação, é sempre recomendável atualizar o sistema para garantir que todos os pacotes e dependências estejam na versão mais recente.
+
+```bash
+  sudo dnf update -y
+```
+
+### 2. **Instalar o MySQL Server**
+
+```bash
+   sudo dnf install mysql-server -y
+```
+
+### 3. **Iniciar e Habilitar o MySQL**
+
+```bash
+   sudo systemctl start mysqld
+   sudo systemctl enable mysqld
+```
+### 4. **Verificar o Status do MySQL**
+
+```bash
+   sudo systemctl status mysqld
+```
+
+### 5. **Obter a Senha Temporária do MySQL Root**
+
+```bash
+   sudo grep 'temporary password' /var/log/mysqld.log
+```
 
 
-## Passo a Passo
+### **Configurações necessárias**  
 
- - [Criando vm no VirtualBox](https://github.com/RomeraSCR/GLPI10_na_pratica/blob/main/VIRTUALBOX.MD)
- - [Instalando e Configurando Mysql](https://github.com/RomeraSCR/GLPI10_na_pratica/blob/main/MYSQL8.MD)
- - [Instalando e Configurando Apache](https://github.com/RomeraSCR/GLPI10_na_pratica/blob/main/APACHE.MD)
- - [Instalando e Configurando GLPI10](https://github.com/RomeraSCR/GLPI10_na_pratica/blob/main/GLPI10.MD)
+### 1. **Acessar o MySQL como usuário root**
 
-## Screenshots
+Utilize a senha Temporária fornecida na instalação para o primeiro acesso.
 
-![App Screenshot](https://glpi-project.org/wp-content/uploads/2021/11/hero-image.png)
+```bash
+  sudo mysql -u root -p
+```
+
+### 2. **Alterar senha do usuario root**
+
+Lembre que as senhas devem atender os padrões de segurança fornecidos pelo software.
+
+```bash
+   ALTER USER 'root'@'localhost' IDENTIFIED BY 'Senha@master2025';
+```
+
+### 3. **Crie banco de dados Exemplo:**
+
+```bash
+   CREATE DATABASE glpibd;
+```
+### 4. **Criar um usuário para o GLPI Exemplo:**
+
+```bash
+   CREATE USER 'glpiuser'@'192.168.100.%' IDENTIFIED BY 'Senha@glpi2025';
+```
+
+### 5. **Obter a Senha Temporária do MySQL Root**
+
+```bash
+   GRANT ALL PRIVILEGES ON glpidb.* TO 'glpiuser'@'192.168.100.%';
+```
+
+### 6. **Aplicar as alterações de permissões:**
+
+```bash
+   FLUSH PRIVILEGES;
+```
+
+### 6. **Sair do MySQL:**
+
+```bash
+   EXIT;
+```
+
+---
+
+
+Seu banco de dados está pronta para prosseguir com o proximo passo!
+
+ - [👉Proximo passo](https://github.com/RomeraSCR/GLPI10_NA_PRATICA/blob/main/PASSO3-APACHE-PHP.md)
 
 
 ## Suporte
