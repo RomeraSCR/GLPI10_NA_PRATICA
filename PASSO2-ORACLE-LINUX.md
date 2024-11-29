@@ -58,9 +58,40 @@ Para este guia, estamos configurando um ambiente de **teste**, então utilizarem
 1. Escolha **Criar um disco rígido virtual agora** e clique em **Criar**.   
 2. **Tamanho do Disco**: Pelo menos **80 GB**, podendo ser ajustado conforme necessário.  
 
-Clique em **Próximo ▶** e, em seguida, em **Finalizar ✔**.  
+Clique em **Próximo ▶** e, em seguida, em **Finalizar ✔** Após feito isso a inicialização da maquina começara a instalação.   
 
-### **Configurar a Rede da Máquina Virtual**
+### **Dica Importante no virtualbox**  
+- para ter acesso ao usuario root utilize `su -` com a senha definida na instalação senha padrão `changeme`.  
+- É recomendável que crie um novo usuario para acesso externo e utilize aplicativos ssh como (Putty/Termius).
+
+### **Comandos para Criar usuario**
+
+     Crie um novo usuário: Substitua acessossh pelo nome que deseja dar ao usuário:
+     ```bash
+        adduser acessossh
+     ```
+
+     Defina a senha para o novo usuário: Substitua acessossh pelo nome do usuário criado (Senha tem que satisfazer os padrões de segurança):
+     ```bash
+        passwd acessossh
+     ```
+     
+     Adicione o usuário ao grupo sudo: Isso permitirá que o usuário execute comandos administrativos:
+     ```bash
+        usermod -aG wheel acessossh
+     ```
+
+    Verifique se o usuário foi adicionado corretamente ao grupo sudo:
+     ```bash
+        groups acessossh
+     ```
+
+    Por final altere a senha do usuario root(Senha tem que satisfazer os padrões de segurança):
+     ```bash
+        passwd root
+     ```
+
+### **Configurar a Rede e acesso SSH**
 
 Para garantir que a máquina virtual possa se comunicar com o host ou acessar a rede externa, é necessário configurar corretamente o adaptador de rede no VirtualBox. Aqui estão as opções mais comuns:
 
@@ -69,57 +100,16 @@ Para garantir que a máquina virtual possa se comunicar com o host ou acessar a 
 ### **1. Configuração em Modo NAT**  
 O modo NAT (Network Address Translation) é a configuração padrão do VirtualBox e permite que a máquina virtual tenha acesso à internet por meio do host.  
 
-1. **Abra as Configurações da Máquina Virtual**:  
-   - No VirtualBox, selecione a máquina criada (`GLPITST`), clique em **Configurações** e depois na aba **Rede**.  
-
-2. **Defina o Adaptador como NAT**:  
-   - Certifique-se de que o **Adaptador 1** esteja habilitado e configurado como **NAT**.  
-
-3. **Testar a Conexão**:  
-   - Inicie a máquina virtual e teste a conexão com um comando como:
-     ```bash
-     ping google.com
-     ```
-   - Se o teste for bem-sucedido, sua máquina está conectada à internet.
-
----
-
 ### **2. Configuração em Modo Bridge**  
 No modo Bridge, a máquina virtual será tratada como um dispositivo físico na mesma rede do host. Isso permite acesso direto a outros dispositivos na rede local.  
 
-1. **Abra as Configurações da Máquina Virtual**:  
-   - No VirtualBox, selecione a máquina criada (`GLPITST`), clique em **Configurações** e depois na aba **Rede**.  
-
-2. **Defina o Adaptador como Bridge**:  
-   - Altere o **Adaptador 1** para o modo **Bridge**.  
-   - Selecione o adaptador de rede física do seu computador (por exemplo, Wi-Fi ou Ethernet).
-
-3. **Configurar IP Dinâmico ou Estático**:  
-   - **IP Dinâmico (DHCP)**: Por padrão, o DHCP atribuirá um endereço IP à máquina virtual.  
-   - **IP Estático**: Configure manualmente o IP no Oracle Linux.  
-     Edite o arquivo de configuração da interface de rede:
-     ```bash
-     sudo nano /etc/sysconfig/network-scripts/ifcfg-enp0s3
-     ```
-     Exemplo de configuração com IP estático:
-     ```bash
-     BOOTPROTO=none
-     IPADDR=192.168.1.100
-     NETMASK=255.255.255.0
-     GATEWAY=192.168.1.1
-     DNS1=8.8.8.8
-     ONBOOT=yes
-     ```
-     Salve o arquivo e reinicie o serviço de rede:
-     ```bash
-     sudo systemctl restart network
-     ```
-
-4. **Testar a Conexão**:  
+### **Testar a Conexão**:  
    - Verifique a conectivi.dade com outro dispositivo da rede ou com a internet.
    - Usando Comando `ping 8.8.8.8` Retorna a comunicação com o Google e Ao usar o `ifconfig` retorna as configurações da interface de rede.
 
 ---
+
+###  **Com ip acessivel e usuario de acesso sua maquina está pronta para acessar ssh**
 
 ### **Dica Final**  
 - Escolha o modo de rede mais adequado ao seu cenário (NAT ou Bridge).  
