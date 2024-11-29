@@ -108,14 +108,6 @@ No modo Bridge, a máquina virtual será tratada como um dispositivo físico na 
 
 ###  **Com ip acessivel e usuario de acesso sua maquina está pronta para acessar ssh**
 
----
-
-### **Liberar Portas Necessárias no Firewalld**
-Agora, você precisará liberar as portas necessárias para o funcionamento do GLPI, MySQL e SSH. Aqui estão as portas mais comuns:
-    - HTTP: Porta `80` (usada para o Apache e acesso web ao GLPI).
-    - HTTPS: Porta `443` (usada para conexões seguras com o Apache).
-    - MySQL/MariaDB: Porta `3306` (usada para o banco de dados MySQL ou MariaDB).
-
      Liberar Porta 80 para HTTP (Apache):
      ```bash
         sudo firewall-cmd --zone=public --add-port=80/tcp --permanent
