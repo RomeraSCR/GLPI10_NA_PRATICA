@@ -118,3 +118,22 @@ Exemplo de configuração disponibilizada pela GLPI-Project:
         </Directory>
     </VirtualHost>
 ```
+
+No arquivo /var/www/html/glpi/.htaccess adicione:
+
+```bash
+    RewriteBase /
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} !^/public
+    RewriteRule ^(.*)$ public/index.php [QSA,L]
+```
+
+E já podemos acessar o `http://ip-servidor` para prosseguir com a instalação
+
+
+## Suporte
+
+Para suporte, mande um email para romeraguilherme@gmail.com ou entre em contato pelo linkedin.
+
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guilherme-romera-569801267/)
