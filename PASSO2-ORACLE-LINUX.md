@@ -13,6 +13,12 @@ Este guia documenta o processo de instalação do Oracle-Linux9.5, um sistema op
 ## 1. Criar maquina no VirtualBox
 Eu estarei utilizando o VirtualBox como virtualizador de maquinas, mas vocês podem usar oque quiser pois praticamente os processos de criação são similares.
 
+#### Este valor é estimado para a melhor experiencia no teste
+
+| Sistema Operacional   | Memoria       | Armazenamento |
+| :---------- | :--------- | --------------- |
+| `Oracle-Linux9.5` | `4gb` | `128gb` |
+
 Leve em consideração que estamos configurando um abiente de teste então utilizaremos o valor de 4gb ram e 128gb de armazenamento, para uso em produção é claro que é nescessario um calculo de componentes baseado na utilização.
 
 ![App Screenshot](https://kfocus.org/img/wf/vbox-w11/vbox-newvm-000.webp?1725558517)

@@ -3,17 +3,17 @@
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
 
-# Instalação e Configuração do Apache 
+# Instalação e Configuração do PHP8.3 e ApacheWeb 
 
-Este projeto tem como objetivo documentar, de forma detalhada, todo o processo de instalação e configuração do GLPI 10.0.17 em um ambiente controlado. Utilizamos uma máquina virtual com Oracle Linux, configurada com os seguintes componentes essenciais: Apache, MySQL 8 e PHP 8.2, todos atualizados para as versões mais recentes, garantindo estabilidade, segurança e desempenho.
+Este guia documenta o processo de instalação do PHP8.3 e o Apache, são softwares essencial para a compatibilidade web e Facil implantação do GLPI10.
+
+## Passo a Passo PHP8.3
+Conectado a maquina virtual via ssh pelo termius ou putty com usuario de permissão sudo vamos iniciar o processo de atualização e instalação dos componentes nessesarios para prosseguirmos com a instalação
+
+Primeiro Comando:
 
 
-## Passo a Passo
 
- - [Criando vm no VirtualBox](https://github.com/RomeraSCR/GLPI10_na_pratica/blob/main/VIRTUALBOX.MD)
- - [Instalando e Configurando Mysql](https://github.com/RomeraSCR/GLPI10_na_pratica/blob/main/MYSQL8.MD)
- - [Instalando e Configurando Apache](https://github.com/RomeraSCR/GLPI10_na_pratica/blob/main/APACHE.MD)
- - [Instalando e Configurando GLPI10](https://github.com/RomeraSCR/GLPI10_na_pratica/blob/main/GLPI10.MD)
 
 ## Screenshots
 
