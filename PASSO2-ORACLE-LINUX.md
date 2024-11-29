@@ -108,31 +108,6 @@ No modo Bridge, a máquina virtual será tratada como um dispositivo físico na 
 
 ###  **Com ip acessivel e usuario de acesso sua maquina está pronta para acessar ssh**
 
-     Liberar Porta 80 para HTTP (Apache):
-     ```bash
-        sudo firewall-cmd --zone=public --add-port=80/tcp --permanent
-     ```
-     
-     Liberar Porta 443 para HTTPS (Apache):
-     ```bash
-        sudo firewall-cmd --zone=public --add-port=443/tcp --permanent
-     ```
-
-    Liberar Porta 3306 para MySQL/MariaDB:
-     ```bash
-        sudo firewall-cmd --zone=public --add-port=3306/tcp --permanent
-     ```
-
-    Aplicar as Alterações no Firewalld:
-     ```bash
-        sudo firewall-cmd --reload
-     ```
-
-    Verificar as Regras do Firewalld:
-     ```bash
-        sudo firewall-cmd --list-all
-     ```
-
 ### **Dica Final**  
 - Escolha o modo de rede mais adequado ao seu cenário (NAT ou Bridge).  
 - Para ambientes de produção, é recomendável usar **IPs estáticos** para evitar mudanças de endereço que possam afetar a conectividade.  
