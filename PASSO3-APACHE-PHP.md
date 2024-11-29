@@ -64,6 +64,83 @@ Se o repositório Remi não estiver habilitado, instale e habilite o repositóri
     php -v
 ```
 
+### 5. **Edite o arquivo `php.ini`**
+
+```bash
+    sudo nano /etc/php.ini
+```
+
+Faça as seguintes configurações 
+
+```bash
+    max_execution_time = 300
+    upload_max_filesize = 100M
+    post_max_size = 100M
+    memory_limit = 512M
+```
+
+Após feito as alterações reinicie o PHP
+
+```bash
+    sudo systemctl restart php-fpm
+```
+
+---
+
+## **Instalação do Apache**  
+
+### 1. **Atualizar o Sistema**
+
+Antes de instalar qualquer pacote, é sempre recomendável atualizar o sistema para garantir que você tenha as versões mais recentes de todos os pacotes.
+
+```bash
+  sudo dnf update -y
+```
+
+### 2. **Instalar o Apache (httpd)**
+
+Para instalar o Apache no Oracle Linux 9.5, você pode usar o DNF, que é o gerenciador de pacotes padrão:
+
+```bash
+  sudo dnf install httpd -y
+```
+
+### 3. **Iniciar e Habilitar o Apache**
+
+Após a instalação, inicie o serviço do Apache e configure-o para iniciar automaticamente ao inicializar o sistema.
+
+```bash
+    sudo systemctl start httpd
+    sudo systemctl enable httpd
+```
+
+### 4. **Verificar o Status do Apache**
+
+Verifique se o Apache está rodando corretamente:
+
+```bash
+    sudo systemctl status httpd
+```
+
+Se o Apache estiver ativo e em execução, você verá uma saída semelhante a esta:
+
+```bash
+    ● httpd.service - The Apache HTTP Server
+   Loaded: loaded (/usr/lib/systemd/system/httpd.service; enabled; vendor preset: disabled)
+   Active: active (running) since Thu 2024-11-28 15:33:32 UTC; 1min 25s ago
+     Docs: man:httpd.service(8)
+ Main PID: 1385 (httpd)
+   Status: "Started, listening on: port 80"
+    Tasks: 213 (limit: 11544)
+   Memory: 16.5M
+   CGroup: /system.slice/httpd.service
+           ├─1385 /usr/sbin/httpd -DFOREGROUND
+           ├─1390 /usr/sbin/httpd -DFOREGROUND
+           ├─1391 /usr/sbin/httpd -DFOREGROUND
+           └─1392 /usr/sbin/httpd -DFOREGROUND
+```
+
+Tente acessar no navegador `http://ip-do-servidor` se a instalação tiver correta é para aparecer a pagina padrão Apache.
 
 ### **Dica Importante no virtualbox**  
 - para ter acesso ao usuario root utilize `su -` com a senha definida na instalação senha padrão `changeme`.  
