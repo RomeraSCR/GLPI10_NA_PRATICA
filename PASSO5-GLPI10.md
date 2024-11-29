@@ -130,7 +130,21 @@ No arquivo /var/www/html/glpi/.htaccess adicione:
 
 E já podemos acessar o `http://ip-servidor` para prosseguir com a instalação
 
+Siga o passo a passo até a configuração do banco de dados:
 
+   - Servidor: `ip-do-servidor`
+   - Usuario: `glpiuser`
+   - Senha: (Senha definida na criação do usuario)
+
+Selecione o banco de dados criado na instalação do MYSQL
+
+Ao selecionar o banco de dados e clicar em concluir, aguardar que toda criação das tabelas sejam feitas com sucesso!
+
+Usuario e senha para primeiro acesso:
+
+   - Usuario:`glpi`
+   - Senha:`glpi`
+   - 
 ## Suporte
 
 Para suporte, mande um email para romeraguilherme@gmail.com ou entre em contato pelo linkedin.

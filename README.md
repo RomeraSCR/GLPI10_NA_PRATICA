@@ -6,7 +6,7 @@
 
 Este projeto documenta detalhadamente o processo de instalação e configuração do **GLPI 10.0.17** em um ambiente controlado. Utilizamos uma máquina virtual com **Oracle Linux**, configurada com os seguintes componentes essenciais:
 
-- **Apache**: Servidor HTTP robusto.
+- **Apache**: Servidor HTTP e HTTPS robusto.
 - **MySQL 8**: Banco de dados para armazenamento.
 - **PHP 8.2**: Para processamento dinâmico.  
 
