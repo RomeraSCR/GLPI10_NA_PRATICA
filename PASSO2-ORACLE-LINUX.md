@@ -147,7 +147,7 @@ Verificar as Regras do Firewalld:
 - Escolha o modo de rede mais adequado ao seu cenário (NAT ou Bridge).  
 - Para ambientes de produção, é recomendável usar **IPs estáticos** para evitar mudanças de endereço que possam afetar a conectividade.  
 
-Sua máquina virtual agora está pronta para prosseguir com a instalação!
+Sua máquina virtual está pronta para prosseguir com o proximo passo!
 
  - [👉Proximo passo](https://github.com/RomeraSCR/GLPI10_NA_PRATICA/blob/main/PASSO3-APACHE-PHP.md)
 

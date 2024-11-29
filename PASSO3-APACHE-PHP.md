@@ -141,26 +141,10 @@ Se o Apache estiver ativo e em execução, você verá uma saída semelhante a e
 ```
 
 Tente acessar no navegador `http://ip-do-servidor` se a instalação tiver correta é para aparecer a pagina padrão Apache.
+ 
+Seu servidor web está pronto para prosseguir com o proximo passo!
 
-### **Dica Importante no virtualbox**  
-- para ter acesso ao usuario root utilize `su -` com a senha definida na instalação senha padrão `changeme`.  
-- É recomendável que crie um novo usuario para acesso externo e utilize aplicativos ssh como (Putty/Termius).
-
-
----
-
-###  **Configurações Adicionais**
-
-Faça acesso a maquina utilizando ssh com o usuario criado e ip da maquina para prosseguir com a ativação do firewall do Oracle linux
-
-
-### **Dica Final**  
-- Escolha o modo de rede mais adequado ao seu cenário (NAT ou Bridge).  
-- Para ambientes de produção, é recomendável usar **IPs estáticos** para evitar mudanças de endereço que possam afetar a conectividade.  
-
-Sua máquina virtual agora está pronta para prosseguir com a instalação!
-
- - [👉Proximo passo](https://github.com/RomeraSCR/GLPI10_NA_PRATICA/blob/main/PASSO3-APACHE-PHP.md)
+ - [👉Proximo passo](https://github.com/RomeraSCR/GLPI10_NA_PRATICA/blob/main/PASSO4-MYSQL-SERVER.md)
 
 
 ## Suporte
