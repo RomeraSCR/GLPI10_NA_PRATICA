@@ -81,7 +81,7 @@ Lembre que as senhas devem atender os padrões de segurança fornecidos pelo sof
 ### 5. **Obter a Senha Temporária do MySQL Root**
 
 ```bash
-   GRANT ALL PRIVILEGES ON glpidb.* TO 'glpiuser'@'192.168.100.%';
+   GRANT ALL PRIVILEGES ON glpibd.* TO 'glpiuser'@'192.168.100.%';
 ```
 
 ### 6. **Aplicar as alterações de permissões:**
