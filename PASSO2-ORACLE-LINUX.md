@@ -1,58 +1,54 @@
-
-
-![Logo](https://i.ibb.co/hM1bC3X/2.png)
-
+# ![Logo](https://i.ibb.co/hM1bC3X/2.png)  
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
-# Guia de Instalação e Configuração do Oracle Linux 9.5
+# Guia de Instalação e Configuração do Oracle Linux 9.5  
 
-Este guia detalha o processo de instalação e configuração do Oracle Linux 9.5, um sistema operacional robusto e confiável. Ele serve como base para gerenciar os softwares necessários para a instalação do GLPI 10, garantindo um ambiente estável e seguro.
+Este guia detalha o processo de instalação e configuração do **Oracle Linux 9.5**, um sistema operacional robusto e confiável. Ele serve como base para gerenciar os softwares necessários para a instalação do **GLPI 10**, garantindo um ambiente estável e seguro.  
 
-## 1. Criar Máquina Virtual no VirtualBox
-Neste guia, utilizaremos o VirtualBox como o virtualizador de máquinas para instalar o Oracle Linux 9.5. Caso prefira outro software de virtualização, os passos são bastante similares e podem ser adaptados conforme necessário.
+---
 
-Inicie o VirtualBox e clique em "Ferramentas" depois em "Novo" para criar uma nova máquina virtual.
+## 1. Criar Máquina Virtual no VirtualBox  
 
-![App Screenshot](https://kfocus.org/img/wf/vbox-w11/vbox-newvm-000.webp?1725558517)
+Neste guia, utilizaremos o **VirtualBox** como virtualizador para instalar o Oracle Linux 9.5. Caso prefira outro software de virtualização, os passos são similares e podem ser adaptados conforme necessário.  
 
-Defina os Parâmetros da Máquina:
+1. **Inicie o VirtualBox**:  
+   - Clique em **"Ferramentas"** e, em seguida, em **"Novo"** para criar uma nova máquina virtual.  
 
-Primera configuração
-Nome: GLPITST (ou outro nome de sua preferência).
-Pasta: Defina o local da instalação ou deixe padrão
-Tipo: Linux
-Versão: Oracle (64-bit).
+   ![App Screenshot](https://kfocus.org/img/wf/vbox-w11/vbox-newvm-000.webp?1725558517)  
 
-Clique em proximo
+2. **Defina os Parâmetros da Máquina**:  
 
-#### Este valor é estimado para a melhor experiencia no teste
+   - **Nome**: `GLPITST` (ou outro nome de sua preferência).  
+   - **Pasta**: Escolha o local de instalação ou deixe o padrão.  
+   - **Tipo**: Linux.  
+   - **Versão**: Oracle (64-bit).  
 
-| Sistema Operacional | Memoria | Armazenamento |
-| :---------- | :--------- | --------------- |
-| `Oracle-Linux9.5` | `4gb` | `128gb` |
+   Clique em **Próximo ▶**.
 
-Leve em consideração que estamos configurando um abiente de teste então utilizaremos o valor de 4gb ram e 128gb de armazenamento, para uso em produção é claro que é nescessario um calculo de componentes baseado na utilização.
-Criar o Disco Rígido Virtual:
+---
 
-Escolha Criar um disco rígido virtual agora e clique em Criar.
-Tipo de Disco: VDI (VirtualBox Disk Image).
-Alocação de Armazenamento: Alocação dinâmica.
-Tamanho do Disco: Pelo menos 20 GB, dependendo de suas necessidades.
+### **Configuração de Recursos**  
 
+Para este guia, estamos configurando um ambiente de **teste**, então utilizaremos:  
 
-## 3. Resumo
-Se chegou até aqui significa que já tem o software nescessario para montar nosso ambiente como o VirtualBox, Vmware, Hyper-v, entre outros, acredito que você está pronto para começar a preparar o sistema operacional!
+- **Memória RAM**: **4 GB (4096 MB)**.  
+- **Armazenamento**: **128 GB**.  
+- **Processadores Lógicos**: Máximo disponível, respeitando os limites do host.  
 
- - [👉Proximo passo](https://github.com/RomeraSCR/GLPI10_NA_PRATICA/blob/main/PASSO2-ORACLE-LINUX.md)
+**Nota**: Para um ambiente de **produção**, calcule os recursos necessários com base na carga de trabalho prevista.  
 
-## Screenshots
+| Sistema Operacional | Memória | Armazenamento |  
+|:--------------------|:--------|:--------------|  
+| `Oracle-Linux9.5`   | `4 GB`  | `128 GB`      |  
 
-![App Screenshot](https://kfocus.org/img/wf/vbox-w11/vbox-newvm-000.webp?1725558517)
+---
 
+### **Criar o Disco Rígido Virtual**  
 
-## Suporte
+1. Escolha **Criar um disco rígido virtual agora** e clique em **Criar**.  
+2. **Tipo de Disco**: Selecione **VDI (VirtualBox Disk Image)**.  
+3. **Tamanho do Disco**: Pelo menos **80 GB**, podendo ser ajustado conforme necessário.  
 
-Para suporte, mande um email para romeraguilherme@gmail.com ou entre em contato pelo linkedin.
+Clique em **Próximo ▶** e, em seguida, em **Finalizar ✔**.  
 
-
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guilherme-romera-569801267/)
+Agora sua máquina virtual está configurada e pronta para receber o Oracle Linux 9.5!  
