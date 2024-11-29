@@ -96,11 +96,8 @@ Clique em **Próximo ▶** e, em seguida, em **Finalizar ✔** Após feito isso 
 Para garantir que a máquina virtual possa se comunicar com o host ou acessar a rede externa, é necessário configurar corretamente o adaptador de rede no VirtualBox. Aqui estão as opções mais comuns:
 
 ---
-
-### **1. Configuração em Modo NAT**  
-O modo NAT (Network Address Translation) é a configuração padrão do VirtualBox e permite que a máquina virtual tenha acesso à internet por meio do host.  
-
-### **2. Configuração em Modo Bridge**  
+ 
+### **Configuração em Modo Bridge**  
 No modo Bridge, a máquina virtual será tratada como um dispositivo físico na mesma rede do host. Isso permite acesso direto a outros dispositivos na rede local.  
 
 ### **Testar a Conexão**:  
