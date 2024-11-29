@@ -141,7 +141,9 @@ Se o Apache estiver ativo e em execução, você verá uma saída semelhante a e
 ```
 
 Tente acessar no navegador `http://ip-do-servidor` se a instalação tiver correta é para aparecer a pagina padrão Apache.
- 
+
+   ![App Screenshot](https://i.ibb.co/5hHVH0P/Screenshot-3.jpg) 
+
 Seu servidor web está pronto para prosseguir com o proximo passo!
 
  - [👉Proximo passo](https://github.com/RomeraSCR/GLPI10_NA_PRATICA/blob/main/PASSO4-MYSQL-SERVER.md)
