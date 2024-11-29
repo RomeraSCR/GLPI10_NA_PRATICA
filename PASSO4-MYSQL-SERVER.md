@@ -101,7 +101,7 @@ Lembre que as senhas devem atender os padrões de segurança fornecidos pelo sof
 
 Seu banco de dados está pronta para prosseguir com o proximo passo!
 
- - [👉Proximo passo](https://github.com/RomeraSCR/GLPI10_NA_PRATICA/blob/main/PASSO3-APACHE-PHP.md)
+ - [👉Proximo passo](https://github.com/RomeraSCR/GLPI10_NA_PRATICA/blob/main/PASSO5-GLPI10.md)
 
 
 ## Suporte

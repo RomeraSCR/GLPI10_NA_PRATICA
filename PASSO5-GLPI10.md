@@ -66,4 +66,20 @@ Use o comando rm para remover o arquivo tgz:
 ```bash
   sudo rm glpi-10.0.17.tgz
 ```
+### 5. **Configurar o Selinux**
+
+Configurar caminho de instalação no Selinux
+
+```bash
+    sudo semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/glpi(/.*)?'
+    sudo restorecon -Rv /var/www/html/glpi/
+```
+Ative as dependencias:
+
+```bash
+    sudo getsebool httpd_can_network_connect
+    sudo getsebool httpd_can_network_connect_db
+    sudo getsebool httpd_can_sendmail
+```
+e já podemos acessar `http://ip-maquina/glpi`
 

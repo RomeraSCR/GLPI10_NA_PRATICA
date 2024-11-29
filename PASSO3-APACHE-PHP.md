@@ -18,7 +18,7 @@ Neste guia, utilizaremos o **Termius** como IDE para acesso ssh ao servidor Orac
 
 2. **Defina os Parâmetros da Máquina**:  
 
-   - **Adress**: `127.0.0.1` (ip definido para obter use `ifconfig`).  
+   - **Adress**: `192.168.*.*` (ip definido para obter use `ifconfig`).  
    - **Label**: GLPITST (Nome de exibição)  
    - **username**: acessossh (Ou usuario definido na criação)  
    - **senha**: (Senha definida na criação anterior). 
